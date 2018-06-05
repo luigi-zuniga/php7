@@ -1,0 +1,10 @@
+Asunto: 
+Recordatorio
+Mensaje: 
+Esto es un recordatorio
+
+Asunto: 
+Prueba
+Mensaje: 
+dasd
+
