@@ -6,7 +6,7 @@
 
     echo "
     <br/>
-    <h3 class='form-signin-heading'>Lista de Usuarios</h3>
+    <h3 class='form-signin-heading'><i class='glyphicon glyphicon-list'></i> Lista de usuarios</h3>
     <br/>
         <div class='input-group'>
         <input class='form-control' id='system-search' name='q' placeholder='Buscar ...' required>
@@ -24,6 +24,7 @@
             <th>Edad</th>
             <th>Teléfono</th>
             <th>Correo</th>
+            <th>Opciones</th>
             </tr>
         </thead>
     <tbody>";
@@ -35,6 +36,16 @@ while($fila = mysqli_fetch_array($resultado))
     echo "<td>".$fila['Edad']."</td>";
     echo "<td>".$fila['Telefono']."</td>";
     echo "<td>".$fila['Correo']."</td>";
+    echo "<td>
+        <a title='eliminar registro' class='btn btn-xs btn-danger' 
+            href='delete.php?id=".$fila['ID']."'>
+            <i class='glyphicon glyphicon-trash glyphicon'></i>
+        </a>
+        <a title='actualizar registro' class='btn btn-xs btn-primary' 
+        href='edit.php?id=".$fila['ID']."'>
+        <i class='glyphicon glyphicon-edit'></i>
+    </a>
+    </td>";
     echo "</tr>";
 }
     echo "</tbody>
