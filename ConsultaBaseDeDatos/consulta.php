@@ -37,14 +37,16 @@ while($fila = mysqli_fetch_array($resultado))
     echo "<td>".$fila['Telefono']."</td>";
     echo "<td>".$fila['Correo']."</td>";
     echo "<td>
-        <a title='eliminar registro' class='btn btn-xs btn-danger' 
+        <a title='eliminar registro' 
+            class='btn btn-xs btn-danger' 
             href='delete.php?id=".$fila['ID']."'>
             <i class='glyphicon glyphicon-trash glyphicon'></i>
         </a>
-        <a title='actualizar registro' class='btn btn-xs btn-primary' 
-        href='edit.php?id=".$fila['ID']."'>
-        <i class='glyphicon glyphicon-edit'></i>
-    </a>
+        <a title='actualizar registro' data-toggle='modal' data-target='#myEditModal'
+           class='btn btn-xs btn-primary'
+           href='edit.php?id=".$fila['ID']."'>
+          <i class='glyphicon glyphicon-edit'></i>
+        </a>
     </td>";
     echo "</tr>";
 }
