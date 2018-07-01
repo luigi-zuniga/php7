@@ -20,14 +20,17 @@
                 <h3 class="panel-title">Order Result</h3>
             </div>
              <div class="panel-body">
-                Order processed.
                 <?php
+                    $tireqty = $_POST['tireqty'];
+                    $oilqty = $_POST['oilqty'];
+                    $sparkqty = $_POST['sparkqty'];
 
-tireqty
-oilqty
-sparkqty
-                 $tireqty = $HTTP_POST_VARS['tireqty'];
-                    echo date('H:i, jS F');
+                    echo "<h4> Order processed at".date('H:i, jS F')."</h4>";
+
+                    echo "<p> Your order is as follows: </p>";
+                    echo $tireqty.' Tires <br/>';
+                    echo $oilqty.' bottles of oil <br/>';
+                    echo $sparkqty.' spark plugs <br/>';
                 ?>
              </div>
         </div>

@@ -16,13 +16,13 @@
             <legend>Form item</legend>
             <div class="form-group">
                 <label for="" class="control-label">Tires</label>
-                <input type="number" class="form-control" id="" min="0" max="100" placeholder="insert value" name="tireqty">
+                <input type="number" class="form-control" id="" min="0" max="100" placeholder="insert value" name="tireqty" required>
                 <br/>
                 <label for="" class="control-label">Oil</label>
-                <input type="number" class="form-control" id="" min="0" max="100" placeholder="insert value" name="oilqty">
+                <input type="number" class="form-control" id="" min="0" max="100" placeholder="insert value" name="oilqty" required>
                 <br/>
                 <label for="" class="control-label">Spark Plugs</label>
-                <input type="number" class="form-control" id="" min="0" max="100" placeholder="insert value" name="sparkqty">
+                <input type="number" class="form-control" id="" min="0" max="100" placeholder="insert value" name="sparkqty" required>
                 <br/>
             </div>
             <button type="submit" class="btn btn-primary">Submit Order</button>
